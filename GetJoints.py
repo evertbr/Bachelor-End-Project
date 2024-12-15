@@ -28,11 +28,13 @@ def getPoseKeypoints(personDict: dict) -> list:
 # Create the final dictionary
 keypoint_dict = {}
 for seqnr, sequence in enumerate(OP_jsons):  # Go through all sequences
-    for frame in sequence:  # Go through all json files in a sequence
+    frame_dict = {}
+    for framenr, frame in enumerate(sequence):  # Go through all json files in a sequence
         poses = readyData(frame)
         keypoints = poses.apply(getPoseKeypoints)  # Gets a pd Series with keypoints for all people in this frame
-        keypoint_dict[seqnr] = keypoints
+        frame_dict[framenr] = keypoints
+    keypoint_dict[seqnr] = frame_dict
 
 # Save the dictionary as a pickle file. Note that it can't be saved as a json due to nestedness
-with open('OPKeypoints.pickle', 'wb') as file:
+with open('OPKeypoints2.pickle', 'wb') as file:
     pickle.dump(keypoint_dict, file)
