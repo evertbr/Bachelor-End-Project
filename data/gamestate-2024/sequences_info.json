@@ -1,0 +1,1011 @@
+{
+    "version": "1.2",
+    "train": [
+        {
+            "id": 0,
+            "name": "SNGS-060",
+            "n_frames": 750
+        },
+        {
+            "id": 1,
+            "name": "SNGS-061",
+            "n_frames": 750
+        },
+        {
+            "id": 2,
+            "name": "SNGS-062",
+            "n_frames": 750
+        },
+        {
+            "id": 3,
+            "name": "SNGS-063",
+            "n_frames": 750
+        },
+        {
+            "id": 4,
+            "name": "SNGS-064",
+            "n_frames": 750
+        },
+        {
+            "id": 5,
+            "name": "SNGS-065",
+            "n_frames": 750
+        },
+        {
+            "id": 6,
+            "name": "SNGS-066",
+            "n_frames": 750
+        },
+        {
+            "id": 7,
+            "name": "SNGS-067",
+            "n_frames": 750
+        },
+        {
+            "id": 8,
+            "name": "SNGS-068",
+            "n_frames": 750
+        },
+        {
+            "id": 9,
+            "name": "SNGS-069",
+            "n_frames": 750
+        },
+        {
+            "id": 10,
+            "name": "SNGS-070",
+            "n_frames": 750
+        },
+        {
+            "id": 11,
+            "name": "SNGS-071",
+            "n_frames": 750
+        },
+        {
+            "id": 12,
+            "name": "SNGS-072",
+            "n_frames": 750
+        },
+        {
+            "id": 13,
+            "name": "SNGS-073",
+            "n_frames": 750
+        },
+        {
+            "id": 14,
+            "name": "SNGS-074",
+            "n_frames": 750
+        },
+        {
+            "id": 15,
+            "name": "SNGS-075",
+            "n_frames": 750
+        },
+        {
+            "id": 16,
+            "name": "SNGS-076",
+            "n_frames": 750
+        },
+        {
+            "id": 17,
+            "name": "SNGS-077",
+            "n_frames": 750
+        },
+        {
+            "id": 18,
+            "name": "SNGS-097",
+            "n_frames": 750
+        },
+        {
+            "id": 19,
+            "name": "SNGS-098",
+            "n_frames": 750
+        },
+        {
+            "id": 20,
+            "name": "SNGS-099",
+            "n_frames": 750
+        },
+        {
+            "id": 21,
+            "name": "SNGS-100",
+            "n_frames": 750
+        },
+        {
+            "id": 22,
+            "name": "SNGS-101",
+            "n_frames": 750
+        },
+        {
+            "id": 23,
+            "name": "SNGS-102",
+            "n_frames": 750
+        },
+        {
+            "id": 24,
+            "name": "SNGS-103",
+            "n_frames": 750
+        },
+        {
+            "id": 25,
+            "name": "SNGS-104",
+            "n_frames": 750
+        },
+        {
+            "id": 26,
+            "name": "SNGS-105",
+            "n_frames": 750
+        },
+        {
+            "id": 27,
+            "name": "SNGS-106",
+            "n_frames": 750
+        },
+        {
+            "id": 28,
+            "name": "SNGS-107",
+            "n_frames": 750
+        },
+        {
+            "id": 29,
+            "name": "SNGS-108",
+            "n_frames": 750
+        },
+        {
+            "id": 30,
+            "name": "SNGS-109",
+            "n_frames": 750
+        },
+        {
+            "id": 31,
+            "name": "SNGS-110",
+            "n_frames": 750
+        },
+        {
+            "id": 32,
+            "name": "SNGS-111",
+            "n_frames": 750
+        },
+        {
+            "id": 33,
+            "name": "SNGS-112",
+            "n_frames": 750
+        },
+        {
+            "id": 34,
+            "name": "SNGS-113",
+            "n_frames": 750
+        },
+        {
+            "id": 35,
+            "name": "SNGS-114",
+            "n_frames": 750
+        },
+        {
+            "id": 36,
+            "name": "SNGS-115",
+            "n_frames": 750
+        },
+        {
+            "id": 37,
+            "name": "SNGS-151",
+            "n_frames": 750
+        },
+        {
+            "id": 38,
+            "name": "SNGS-152",
+            "n_frames": 750
+        },
+        {
+            "id": 39,
+            "name": "SNGS-153",
+            "n_frames": 750
+        },
+        {
+            "id": 40,
+            "name": "SNGS-154",
+            "n_frames": 750
+        },
+        {
+            "id": 41,
+            "name": "SNGS-155",
+            "n_frames": 750
+        },
+        {
+            "id": 42,
+            "name": "SNGS-156",
+            "n_frames": 750
+        },
+        {
+            "id": 43,
+            "name": "SNGS-157",
+            "n_frames": 750
+        },
+        {
+            "id": 44,
+            "name": "SNGS-158",
+            "n_frames": 750
+        },
+        {
+            "id": 45,
+            "name": "SNGS-159",
+            "n_frames": 750
+        },
+        {
+            "id": 46,
+            "name": "SNGS-160",
+            "n_frames": 750
+        },
+        {
+            "id": 47,
+            "name": "SNGS-161",
+            "n_frames": 750
+        },
+        {
+            "id": 48,
+            "name": "SNGS-162",
+            "n_frames": 750
+        },
+        {
+            "id": 49,
+            "name": "SNGS-163",
+            "n_frames": 750
+        },
+        {
+            "id": 50,
+            "name": "SNGS-164",
+            "n_frames": 750
+        },
+        {
+            "id": 51,
+            "name": "SNGS-165",
+            "n_frames": 750
+        },
+        {
+            "id": 52,
+            "name": "SNGS-166",
+            "n_frames": 750
+        },
+        {
+            "id": 53,
+            "name": "SNGS-167",
+            "n_frames": 750
+        },
+        {
+            "id": 54,
+            "name": "SNGS-168",
+            "n_frames": 750
+        },
+        {
+            "id": 55,
+            "name": "SNGS-169",
+            "n_frames": 750
+        },
+        {
+            "id": 56,
+            "name": "SNGS-170",
+            "n_frames": 750
+        }
+    ],
+    "validation": [
+        {
+            "id": 0,
+            "name": "SNGS-021",
+            "n_frames": 750
+        },
+        {
+            "id": 1,
+            "name": "SNGS-022",
+            "n_frames": 750
+        },
+        {
+            "id": 2,
+            "name": "SNGS-023",
+            "n_frames": 750
+        },
+        {
+            "id": 3,
+            "name": "SNGS-024",
+            "n_frames": 750
+        },
+        {
+            "id": 4,
+            "name": "SNGS-025",
+            "n_frames": 750
+        },
+        {
+            "id": 5,
+            "name": "SNGS-026",
+            "n_frames": 750
+        },
+        {
+            "id": 6,
+            "name": "SNGS-027",
+            "n_frames": 750
+        },
+        {
+            "id": 7,
+            "name": "SNGS-028",
+            "n_frames": 750
+        },
+        {
+            "id": 8,
+            "name": "SNGS-029",
+            "n_frames": 750
+        },
+        {
+            "id": 9,
+            "name": "SNGS-030",
+            "n_frames": 750
+        },
+        {
+            "id": 10,
+            "name": "SNGS-031",
+            "n_frames": 750
+        },
+        {
+            "id": 11,
+            "name": "SNGS-032",
+            "n_frames": 750
+        },
+        {
+            "id": 12,
+            "name": "SNGS-033",
+            "n_frames": 750
+        },
+        {
+            "id": 13,
+            "name": "SNGS-034",
+            "n_frames": 750
+        },
+        {
+            "id": 14,
+            "name": "SNGS-035",
+            "n_frames": 750
+        },
+        {
+            "id": 15,
+            "name": "SNGS-036",
+            "n_frames": 750
+        },
+        {
+            "id": 16,
+            "name": "SNGS-037",
+            "n_frames": 750
+        },
+        {
+            "id": 17,
+            "name": "SNGS-038",
+            "n_frames": 750
+        },
+        {
+            "id": 18,
+            "name": "SNGS-039",
+            "n_frames": 750
+        },
+        {
+            "id": 19,
+            "name": "SNGS-040",
+            "n_frames": 750
+        },
+        {
+            "id": 20,
+            "name": "SNGS-041",
+            "n_frames": 750
+        },
+        {
+            "id": 21,
+            "name": "SNGS-042",
+            "n_frames": 750
+        },
+        {
+            "id": 22,
+            "name": "SNGS-043",
+            "n_frames": 750
+        },
+        {
+            "id": 23,
+            "name": "SNGS-044",
+            "n_frames": 750
+        },
+        {
+            "id": 24,
+            "name": "SNGS-045",
+            "n_frames": 750
+        },
+        {
+            "id": 25,
+            "name": "SNGS-046",
+            "n_frames": 750
+        },
+        {
+            "id": 26,
+            "name": "SNGS-047",
+            "n_frames": 750
+        },
+        {
+            "id": 27,
+            "name": "SNGS-048",
+            "n_frames": 750
+        },
+        {
+            "id": 28,
+            "name": "SNGS-049",
+            "n_frames": 750
+        },
+        {
+            "id": 29,
+            "name": "SNGS-050",
+            "n_frames": 750
+        },
+        {
+            "id": 30,
+            "name": "SNGS-051",
+            "n_frames": 750
+        },
+        {
+            "id": 31,
+            "name": "SNGS-052",
+            "n_frames": 750
+        },
+        {
+            "id": 32,
+            "name": "SNGS-053",
+            "n_frames": 750
+        },
+        {
+            "id": 33,
+            "name": "SNGS-054",
+            "n_frames": 750
+        },
+        {
+            "id": 34,
+            "name": "SNGS-055",
+            "n_frames": 750
+        },
+        {
+            "id": 35,
+            "name": "SNGS-056",
+            "n_frames": 750
+        },
+        {
+            "id": 36,
+            "name": "SNGS-057",
+            "n_frames": 750
+        },
+        {
+            "id": 37,
+            "name": "SNGS-058",
+            "n_frames": 750
+        },
+        {
+            "id": 38,
+            "name": "SNGS-059",
+            "n_frames": 750
+        },
+        {
+            "id": 39,
+            "name": "SNGS-078",
+            "n_frames": 750
+        },
+        {
+            "id": 40,
+            "name": "SNGS-079",
+            "n_frames": 750
+        },
+        {
+            "id": 41,
+            "name": "SNGS-080",
+            "n_frames": 750
+        },
+        {
+            "id": 42,
+            "name": "SNGS-081",
+            "n_frames": 750
+        },
+        {
+            "id": 43,
+            "name": "SNGS-082",
+            "n_frames": 750
+        },
+        {
+            "id": 44,
+            "name": "SNGS-083",
+            "n_frames": 750
+        },
+        {
+            "id": 45,
+            "name": "SNGS-084",
+            "n_frames": 750
+        },
+        {
+            "id": 46,
+            "name": "SNGS-085",
+            "n_frames": 750
+        },
+        {
+            "id": 47,
+            "name": "SNGS-086",
+            "n_frames": 750
+        },
+        {
+            "id": 48,
+            "name": "SNGS-087",
+            "n_frames": 750
+        },
+        {
+            "id": 49,
+            "name": "SNGS-088",
+            "n_frames": 750
+        },
+        {
+            "id": 50,
+            "name": "SNGS-089",
+            "n_frames": 750
+        },
+        {
+            "id": 51,
+            "name": "SNGS-090",
+            "n_frames": 750
+        },
+        {
+            "id": 52,
+            "name": "SNGS-091",
+            "n_frames": 750
+        },
+        {
+            "id": 53,
+            "name": "SNGS-092",
+            "n_frames": 750
+        },
+        {
+            "id": 54,
+            "name": "SNGS-093",
+            "n_frames": 750
+        },
+        {
+            "id": 55,
+            "name": "SNGS-094",
+            "n_frames": 750
+        },
+        {
+            "id": 56,
+            "name": "SNGS-095",
+            "n_frames": 750
+        },
+        {
+            "id": 57,
+            "name": "SNGS-096",
+            "n_frames": 750
+        }
+    ],
+    "test": [
+        {
+            "id": 0,
+            "name": "SNGS-116",
+            "n_frames": 750
+        },
+        {
+            "id": 1,
+            "name": "SNGS-117",
+            "n_frames": 750
+        },
+        {
+            "id": 2,
+            "name": "SNGS-118",
+            "n_frames": 750
+        },
+        {
+            "id": 3,
+            "name": "SNGS-119",
+            "n_frames": 750
+        },
+        {
+            "id": 4,
+            "name": "SNGS-120",
+            "n_frames": 750
+        },
+        {
+            "id": 5,
+            "name": "SNGS-121",
+            "n_frames": 750
+        },
+        {
+            "id": 6,
+            "name": "SNGS-122",
+            "n_frames": 750
+        },
+        {
+            "id": 7,
+            "name": "SNGS-123",
+            "n_frames": 750
+        },
+        {
+            "id": 8,
+            "name": "SNGS-124",
+            "n_frames": 750
+        },
+        {
+            "id": 9,
+            "name": "SNGS-125",
+            "n_frames": 750
+        },
+        {
+            "id": 10,
+            "name": "SNGS-126",
+            "n_frames": 750
+        },
+        {
+            "id": 11,
+            "name": "SNGS-127",
+            "n_frames": 750
+        },
+        {
+            "id": 12,
+            "name": "SNGS-128",
+            "n_frames": 750
+        },
+        {
+            "id": 13,
+            "name": "SNGS-129",
+            "n_frames": 750
+        },
+        {
+            "id": 14,
+            "name": "SNGS-130",
+            "n_frames": 750
+        },
+        {
+            "id": 15,
+            "name": "SNGS-131",
+            "n_frames": 750
+        },
+        {
+            "id": 16,
+            "name": "SNGS-132",
+            "n_frames": 750
+        },
+        {
+            "id": 17,
+            "name": "SNGS-133",
+            "n_frames": 750
+        },
+        {
+            "id": 18,
+            "name": "SNGS-134",
+            "n_frames": 750
+        },
+        {
+            "id": 19,
+            "name": "SNGS-135",
+            "n_frames": 750
+        },
+        {
+            "id": 20,
+            "name": "SNGS-136",
+            "n_frames": 750
+        },
+        {
+            "id": 21,
+            "name": "SNGS-137",
+            "n_frames": 750
+        },
+        {
+            "id": 22,
+            "name": "SNGS-138",
+            "n_frames": 750
+        },
+        {
+            "id": 23,
+            "name": "SNGS-139",
+            "n_frames": 750
+        },
+        {
+            "id": 24,
+            "name": "SNGS-140",
+            "n_frames": 750
+        },
+        {
+            "id": 25,
+            "name": "SNGS-141",
+            "n_frames": 750
+        },
+        {
+            "id": 26,
+            "name": "SNGS-142",
+            "n_frames": 750
+        },
+        {
+            "id": 27,
+            "name": "SNGS-143",
+            "n_frames": 750
+        },
+        {
+            "id": 28,
+            "name": "SNGS-144",
+            "n_frames": 750
+        },
+        {
+            "id": 29,
+            "name": "SNGS-145",
+            "n_frames": 750
+        },
+        {
+            "id": 30,
+            "name": "SNGS-146",
+            "n_frames": 750
+        },
+        {
+            "id": 31,
+            "name": "SNGS-147",
+            "n_frames": 750
+        },
+        {
+            "id": 32,
+            "name": "SNGS-148",
+            "n_frames": 750
+        },
+        {
+            "id": 33,
+            "name": "SNGS-149",
+            "n_frames": 750
+        },
+        {
+            "id": 34,
+            "name": "SNGS-150",
+            "n_frames": 750
+        },
+        {
+            "id": 35,
+            "name": "SNGS-187",
+            "n_frames": 750
+        },
+        {
+            "id": 36,
+            "name": "SNGS-188",
+            "n_frames": 750
+        },
+        {
+            "id": 37,
+            "name": "SNGS-189",
+            "n_frames": 750
+        },
+        {
+            "id": 38,
+            "name": "SNGS-190",
+            "n_frames": 750
+        },
+        {
+            "id": 39,
+            "name": "SNGS-191",
+            "n_frames": 750
+        },
+        {
+            "id": 40,
+            "name": "SNGS-192",
+            "n_frames": 750
+        },
+        {
+            "id": 41,
+            "name": "SNGS-193",
+            "n_frames": 750
+        },
+        {
+            "id": 42,
+            "name": "SNGS-194",
+            "n_frames": 750
+        },
+        {
+            "id": 43,
+            "name": "SNGS-195",
+            "n_frames": 750
+        },
+        {
+            "id": 44,
+            "name": "SNGS-196",
+            "n_frames": 750
+        },
+        {
+            "id": 45,
+            "name": "SNGS-197",
+            "n_frames": 750
+        },
+        {
+            "id": 46,
+            "name": "SNGS-198",
+            "n_frames": 750
+        },
+        {
+            "id": 47,
+            "name": "SNGS-199",
+            "n_frames": 750
+        },
+        {
+            "id": 48,
+            "name": "SNGS-200",
+            "n_frames": 750
+        }
+    ],
+    "challenge": [
+        {
+            "id": 0,
+            "name": "SNGS-001",
+            "n_frames": 750
+        },
+        {
+            "id": 1,
+            "name": "SNGS-002",
+            "n_frames": 750
+        },
+        {
+            "id": 2,
+            "name": "SNGS-003",
+            "n_frames": 750
+        },
+        {
+            "id": 3,
+            "name": "SNGS-004",
+            "n_frames": 750
+        },
+        {
+            "id": 4,
+            "name": "SNGS-005",
+            "n_frames": 750
+        },
+        {
+            "id": 5,
+            "name": "SNGS-006",
+            "n_frames": 750
+        },
+        {
+            "id": 6,
+            "name": "SNGS-007",
+            "n_frames": 750
+        },
+        {
+            "id": 7,
+            "name": "SNGS-008",
+            "n_frames": 750
+        },
+        {
+            "id": 8,
+            "name": "SNGS-009",
+            "n_frames": 750
+        },
+        {
+            "id": 9,
+            "name": "SNGS-010",
+            "n_frames": 750
+        },
+        {
+            "id": 10,
+            "name": "SNGS-011",
+            "n_frames": 750
+        },
+        {
+            "id": 11,
+            "name": "SNGS-012",
+            "n_frames": 750
+        },
+        {
+            "id": 12,
+            "name": "SNGS-013",
+            "n_frames": 750
+        },
+        {
+            "id": 13,
+            "name": "SNGS-014",
+            "n_frames": 750
+        },
+        {
+            "id": 14,
+            "name": "SNGS-015",
+            "n_frames": 750
+        },
+        {
+            "id": 15,
+            "name": "SNGS-016",
+            "n_frames": 750
+        },
+        {
+            "id": 16,
+            "name": "SNGS-017",
+            "n_frames": 750
+        },
+        {
+            "id": 17,
+            "name": "SNGS-018",
+            "n_frames": 750
+        },
+        {
+            "id": 18,
+            "name": "SNGS-019",
+            "n_frames": 750
+        },
+        {
+            "id": 19,
+            "name": "SNGS-020",
+            "n_frames": 750
+        },
+        {
+            "id": 20,
+            "name": "SNGS-171",
+            "n_frames": 750
+        },
+        {
+            "id": 21,
+            "name": "SNGS-172",
+            "n_frames": 750
+        },
+        {
+            "id": 22,
+            "name": "SNGS-173",
+            "n_frames": 750
+        },
+        {
+            "id": 23,
+            "name": "SNGS-174",
+            "n_frames": 750
+        },
+        {
+            "id": 24,
+            "name": "SNGS-175",
+            "n_frames": 750
+        },
+        {
+            "id": 25,
+            "name": "SNGS-176",
+            "n_frames": 750
+        },
+        {
+            "id": 26,
+            "name": "SNGS-177",
+            "n_frames": 750
+        },
+        {
+            "id": 27,
+            "name": "SNGS-178",
+            "n_frames": 750
+        },
+        {
+            "id": 28,
+            "name": "SNGS-179",
+            "n_frames": 750
+        },
+        {
+            "id": 29,
+            "name": "SNGS-180",
+            "n_frames": 750
+        },
+        {
+            "id": 30,
+            "name": "SNGS-181",
+            "n_frames": 750
+        },
+        {
+            "id": 31,
+            "name": "SNGS-182",
+            "n_frames": 750
+        },
+        {
+            "id": 32,
+            "name": "SNGS-183",
+            "n_frames": 750
+        },
+        {
+            "id": 33,
+            "name": "SNGS-184",
+            "n_frames": 750
+        },
+        {
+            "id": 34,
+            "name": "SNGS-185",
+            "n_frames": 750
+        },
+        {
+            "id": 35,
+            "name": "SNGS-186",
+            "n_frames": 750
+        }
+    ]
+}
