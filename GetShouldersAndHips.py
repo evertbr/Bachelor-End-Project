@@ -1,5 +1,4 @@
 import pickle
-import pandas as pd
 
 # Get the full keypoints dictionary
 with open('OPKeypoints2.pickle', 'rb') as file:
