@@ -6,11 +6,11 @@ with open('OPKeypoints2.pickle', 'rb') as file:
     keypoints_dict = pickle.load(file)
 
 def getShouldersandHips(keypointlist : list) -> list:
-    """Takes a list of all COCO format keypoints and returns only shoulders and hips"""
-    Rshoulder = keypointlist[2]
-    Lshoulder = keypointlist[5]
-    Rhip = keypointlist[9]
-    Lhip = keypointlist[12]
+    """Takes a list of all COCO format keypoints and returns only shoulders and hips (x,y) coords with confidence score"""
+    Rshoulder = keypointlist[6:9]
+    Lshoulder = keypointlist[15:18]
+    Rhip = keypointlist[27:30]
+    Lhip = keypointlist[46:49]
 
     return [Rshoulder, Lshoulder, Rhip, Lhip]
 
