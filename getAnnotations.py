@@ -19,11 +19,10 @@ for filenr, path in enumerate(annotationpaths):
                 image_id = annotation['image_id']
                 occluded = annotation['attributes']['occluded']
                 keypoints = annotation['keypoints']
-                joints = getShouldersandHips(keypoints)
                 try:
-                    annotation_dict[filenr][image_id].append([joints, occluded])
+                    annotation_dict[filenr][image_id].append([keypoints, occluded])
                 except:
-                    annotation_dict[filenr][image_id] = [[joints, occluded]]
+                    annotation_dict[filenr][image_id] = [[keypoints, occluded]]
 
-with open('annotations.pickle', 'wb') as file:
+with open('AnnsSH.pickle', 'wb') as file:
     pickle.dump(annotation_dict, file)

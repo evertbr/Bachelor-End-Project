@@ -44,5 +44,5 @@ for seqnr, sequence in enumerate(OP_jsons):  # Go through all sequences
     keypoint_dict[seqnr] = frame_dict
 
 # Save the dictionary as a pickle file. Note that it can't be saved as a json due to nestedness
-# with open('OPKeypoints2.pickle', 'wb') as file:
-#     pickle.dump(keypoint_dict, file)
+with open('OPKeypoints3.pickle', 'wb') as file:
+    pickle.dump(keypoint_dict, file)
