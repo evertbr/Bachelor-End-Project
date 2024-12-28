@@ -1,7 +1,7 @@
 import pickle
 
 # Get the full keypoints dictionary
-with open('OPKeypoints3.pickle', 'rb') as file:
+with open('OPKeypointsnormal.pickle', 'rb') as file:
     keypoints_dict = pickle.load(file)
 
 def getShouldersandHips(keypointlist : list) -> list:
@@ -24,5 +24,5 @@ for seqnr, seq in enumerate(keypoints_dict.values()):
     SHdict[seqnr] = frameSH_dict
 
 # Save the dictionary as a pickle file.
-with open('OPSH5.pickle', 'wb') as file:
+with open('OPSHN.pickle', 'wb') as file:
     pickle.dump(SHdict, file)

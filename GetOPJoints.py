@@ -2,7 +2,7 @@ import os
 import pandas as pd
 import pickle
 
-OP_path = "../RESULTS/OpenPose"
+OP_path = "../RESULTS/OpenPose/normal"
 
 # Get the paths to all sequences and store them
 def getJSONS(rootpath : str) -> list:
@@ -44,5 +44,5 @@ for seqnr, sequence in enumerate(OP_jsons):  # Go through all sequences
     keypoint_dict[seqnr] = frame_dict
 
 # Save the dictionary as a pickle file. Note that it can't be saved as a json due to nestedness
-with open('OPKeypoints3.pickle', 'wb') as file:
+with open('OPKeypointsnormal.pickle', 'wb') as file:
     pickle.dump(keypoint_dict, file)
