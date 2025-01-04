@@ -23,5 +23,5 @@ for path in paths:
                 except:
                     annotation_dict[filenr][image_id] = [joints]
 
-with open('APSH2.pickle', 'wb') as file:
+with open('APKPFINAL.pickle', 'wb') as file:
     pickle.dump(annotation_dict, file)
