@@ -6,12 +6,12 @@ with open('OPKeypointsFINAl.pickle', 'rb') as file:
 
 def getShouldersandHips(keypointlist : list) -> list:
     """Takes a list of all COCO format keypoints and returns only shoulders and hips (x,y) coords with confidence score"""
-    Rshoulder = keypointlist[6:9]
+    Rshoulder = keypointlist[18:21]
     Lshoulder = keypointlist[15:18]
-    Rhip = keypointlist[27:30]
-    Lhip = keypointlist[46:49]
+    Rhip = keypointlist[36:39]
+    Lhip = keypointlist[33:36]
 
-    return [Rshoulder, Lshoulder, Rhip, Lhip]
+    return [Lshoulder, Rshoulder, Lhip, Rhip]
 
 # Trim down the full keypoints dictionary to only shoulders and hips, which will be used in the project.
 SHdict = {}
@@ -24,5 +24,5 @@ for seqnr, seq in enumerate(keypoints_dict.values()):
     SHdict[seqnr] = frameSH_dict
 
 # Save the dictionary as a pickle file.
-with open('OPSHN2.pickle', 'wb') as file:
+with open('OPSHFINALFINAL.pickle', 'wb') as file:
     pickle.dump(SHdict, file)
