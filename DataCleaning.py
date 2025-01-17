@@ -2,8 +2,7 @@ import pickle
 from copy import deepcopy
 import numpy as np
 import matplotlib.pyplot as plt
-import seaborn as sns
-
+from bisect import bisect_left
 
 def openPickle(filename: str) -> dict:
     """Open Pickle file and store it in a dictionary"""
@@ -275,9 +274,6 @@ for i in range(len(OP_keypoints)):
         AP_ranked_OKS_list.append(AP_ranked_OKS)
         OP_ranked_OKS_list.append(OP_ranked_OKS)
 
-
-
-
 AP_conf_OKS = np.concatenate(AP_ranked_OKS_list, axis=1)
 sort_AP_conf_OKS = np.argsort(AP_conf_OKS[0])[::-1]
 AP_conf_OKS = AP_conf_OKS[:, sort_AP_conf_OKS]
@@ -316,6 +312,9 @@ for seq in annotations:
         anns_lens.append(len(annotations[seq][pic]))
 
 AP_conf_OKS = AP_conf_OKS.T
+OP_conf_OKS = OP_conf_OKS.T
+
+num_annotated = np.sum(anns_lens)  # total amount of annotations
 
 def precison_recall(conf_OKS, threshold, pos):
     """Calculate the precisions and recalls for different threshold values
@@ -329,7 +328,7 @@ def precison_recall(conf_OKS, threshold, pos):
     recalls = np.empty(len(conf_OKS))
 
     for rank in range(len(conf_OKS)):
-        oks, conf = conf_OKS[rank]
+        conf, oks = conf_OKS[rank]
         if oks >= threshold:
             truepos += 1
         else:
@@ -339,46 +338,82 @@ def precison_recall(conf_OKS, threshold, pos):
         recalls[rank] = truepos / pos
 
 
+    return precisions, recalls
+
+recallpoints = np.arange(0,1.1, 0.01)
+
+oks_thresholds = np.arange(0.5, 1, 0.05)
+# blub = AP_conf_OKS.T[1]
+# ledezma = blub >= 0.999
+# saibari = ledezma.sum()
+
+def plotPRcurve(precs, recs, recallthresholds, modelname, oksthreshold):
+    """Plot the precision recall
+    precs: np.array containing precision values
+    recs: np.array containing recall values
+    recallthresholds: recall values at which to measure the precision
+    modelname: string containing the model name. Used for labelling only
+    oksthreshold: the OKS threshold. Again, only for labelling"""
+
+    precs_to_plot = np.empty(len(recallthresholds))
+    recs_to_plot = np.empty(len(recallthresholds))
+    precs_to_plot.fill(np.nan)
+    recs_to_plot.fill(np.nan)
+    j = 0
+
+    for threshold in recallthresholds:
+        try:
+            idx = bisect_left(recs, threshold)
+            recs_to_plot[j] = recs[idx]
+            precs_to_plot[j] = precs[idx]
+            j+=1
+        except:
+            break
+
+    plt.plot(recs_to_plot, precs_to_plot)
+    plt.title("PR-curves for " + modelname)
+    plt.ylabel('Precision')
+    plt.xlabel('Recall')
+    plt.ylim(0,1)
+    plt.xlim(0,1)
+    plt.legend([round(x, 2) for x in oks_thresholds])
+    plt.savefig("./Graphs/Results/PR-curves/" + modelname + str(round(oksthreshold, 2)) + ".png")
 
 
+def average_precision(precs, recs):
+    """Calculate the approximated average precision"""
+    APrec = 0
+
+    for i in range(len(precs)):
+        if i == 0:
+            Delta_r = recs[i]
+        else:
+            Delta_r = recs[i] - recs[i-1]
+        APrec += precs[i] * Delta_r
+
+    return APrec
+
+APAPRs = []
+OPAPRs = []
 
 
-# TODO: DEZE ONZIN VERWIJDEREN EN HEEL VEEL ALCOHOL DRINKEN
-AP_diffs = np.array(AP_diffs)
-OP_diffs = np.array(OP_diffs)
+# Create PR-curves and calculate the average precision for different oks threshold values
+for oks_threshold in oks_thresholds:
+    OP_precs, OP_recs = precison_recall(OP_conf_OKS, oks_threshold, num_annotated)
+    # plotPRcurve(OP_precs, OP_recs, recallpoints, 'OpenPose', oks_threshold)
+    AP_precs, AP_recs = precison_recall(AP_conf_OKS, oks_threshold, num_annotated)
+    # plotPRcurve(AP_precs, AP_recs, recallpoints, 'AlphaPose', oks_threshold)
+    OPAPR = average_precision(OP_precs, OP_recs)
+    APAPR = average_precision(AP_precs, AP_recs)
+    APAPRs.append(APAPR)
+    OPAPRs.append(OPAPR)
 
-AP_correct_lens = (AP_diffs == 0).sum()
-OP_correct_lens = (OP_diffs == 0).sum()
 
-AP_overpredict = (AP_diffs < 0).sum()  # More people detected than annotated
-OP_overpredict = (OP_diffs < 0).sum()
-
-AP_underpredict = (AP_diffs > 0).sum()  # More people annotated than detected
-OP_underpredict = (OP_diffs > 0).sum()
-
-AP_fns = sum(fn for fn in AP_diffs if fn > 0)  # If AP predicts n less people than annotated, that means there are n false negatives
-OP_fns = sum(fn for fn in OP_diffs if fn > 0)
-num_annotated = np.sum(anns_lens)  # total amount of annotations
-
-def averageprecision(OKS_list, threshold, falseneg):
-    """Find the precision and recall values
-     OKS_list: list with the average object keypoint similarities for all frames in a sequence
-     threshold: the OKS threshold
-     falseneg: the amount of false negatives"""
-    falsepos = 0  # Tracks the amount of false positives
-    truepos = 0
-
-    for pic in OKS_list:
-        for oks in pic:
-            if oks < threshold:
-                falsepos += 1
-            else:
-                truepos += 1
-
-    precision = truepos / (truepos + falsepos)
-    recall = truepos / (truepos + falseneg)
-
-    return precision, recall
-
-def calculate_precision_recall(OKS_list):
-    pass
+plt.plot(oks_thresholds, APAPRs, color='orange', label='AlphaPose', marker='o')
+plt.plot(oks_thresholds, OPAPRs, color='green', label='OpenPose', marker='x')
+plt.xlabel('OKS threshold')
+plt.ylabel('Average Precision')
+plt.ylim(0,1)
+plt.title("Average Precisions")
+plt.legend()
+plt.savefig("./Graphs/Results/averageprecisions.png")
